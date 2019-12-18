@@ -1,1 +1,3 @@
 ## Project L
+
+A Simple Top-Down view game...
