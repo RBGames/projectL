@@ -33,7 +33,7 @@ attack = 10;
 defense = 5;
 life = 100;
 intSpeed = 2;
-
+shoots = 1;
 </string>
           </argument>
         </arguments>
@@ -84,8 +84,10 @@ if(down &amp;&amp; y &lt; room_height - 32){
 
 // Shooting
 
-if (action){
-    instance_create(x,y,obj_shoot);
+if (instance_number(obj_shoot) &lt; shoots){
+    if (action){
+        instance_create(x,y,obj_shoot);
+    }
 }
 </string>
           </argument>

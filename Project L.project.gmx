@@ -8,13 +8,22 @@
   <sprites name="sprites">
     <sprite>sprites\spr_player</sprite>
     <sprite>sprites\spr_shoot</sprite>
+    <sprite>sprites\spr_enemy_shoot</sprite>
     <sprite>sprites\spr_col_shoot</sprite>
-    <sprite>sprites\spr_enemy</sprite>
     <sprites name="AI Controls">
       <sprite>sprites\spr_move_up</sprite>
       <sprite>sprites\spr_move_down</sprite>
       <sprite>sprites\spr_move_left</sprite>
       <sprite>sprites\spr_move_right</sprite>
+    </sprites>
+    <sprites name="Enemies">
+      <sprite>sprites\spr_enemy</sprite>
+      <sprite>sprites\spr_enemy_lv1</sprite>
+      <sprite>sprites\spr_enemy_lv2</sprite>
+      <sprite>sprites\spr_enemy_lv3</sprite>
+      <sprite>sprites\spr_enemy_lv4</sprite>
+      <sprite>sprites\spr_boss</sprite>
+      <sprite>sprites\spr_boss_final</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -24,18 +33,30 @@
   <objects name="objects">
     <object>objects\obj_player</object>
     <object>objects\obj_shoot</object>
+    <object>objects\obj_enemy_shoot</object>
     <object>objects\obj_col_shoot</object>
-    <object>objects\obj_enemy</object>
-    <object>objects\obj_enemy1</object>
     <objects name="AI Controls">
       <object>objects\obj_move_up</object>
       <object>objects\obj_move_down</object>
       <object>objects\obj_move_left</object>
       <object>objects\obj_move_right</object>
     </objects>
+    <objects name="Enemies">
+      <object>objects\obj_enemy</object>
+      <object>objects\obj_enemy_lv1</object>
+      <object>objects\obj_enemy_lv2</object>
+      <object>objects\obj_enemy_lv3</object>
+      <object>objects\obj_enemy_lv4</object>
+      <object>objects\obj_boss</object>
+      <object>objects\obj_boss_final</object>
+    </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_main</room>
+    <room>rooms\rm_world1</room>
+    <room>rooms\rm_wold2</room>
+    <room>rooms\rm_world3</room>
+    <room>rooms\rm_world4</room>
+    <room>rooms\rm_world5</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
