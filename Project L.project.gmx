@@ -25,11 +25,27 @@
       <sprite>sprites\spr_boss</sprite>
       <sprite>sprites\spr_boss_final</sprite>
     </sprites>
+    <sprites name="NPCs">
+      <sprite>sprites\spr_guy</sprite>
+      <sprite>sprites\spr_lady</sprite>
+    </sprites>
+    <sprites name="GUI">
+      <sprites name="HUD">
+        <sprite>sprites\spr_cursor</sprite>
+      </sprites>
+    </sprites>
+    <sprites name="Blocks">
+      <sprite>sprites\spr_block</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
+    <background>background\tiles1</background>
   </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\scr_destroy_bullet.gml</script>
+  </scripts>
   <objects name="objects">
     <object>objects\obj_player</object>
     <object>objects\obj_shoot</object>
@@ -49,6 +65,18 @@
       <object>objects\obj_enemy_lv4</object>
       <object>objects\obj_boss</object>
       <object>objects\obj_boss_final</object>
+    </objects>
+    <objects name="NPCs">
+      <object>objects\obj_guy</object>
+      <object>objects\obj_lady</object>
+    </objects>
+    <objects name="GUI">
+      <objects name="HUD">
+        <object>objects\obj_cursor</object>
+      </objects>
+    </objects>
+    <objects name="Blocks">
+      <object>objects\obj_block</object>
     </objects>
   </objects>
   <rooms name="rooms">

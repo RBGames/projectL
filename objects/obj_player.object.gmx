@@ -28,6 +28,7 @@
             <string>/// Variables
 
 // Stats
+canFire = false;
 level = 1; 
 attack = 10;
 defense = 5;
@@ -82,14 +83,44 @@ if(down &amp;&amp; y &lt; room_height - 32){
     y += intSpeed;
 }
 
-// Shooting
-
-if (instance_number(obj_shoot) &lt; shoots){
-    if (action){
-        instance_create(x,y,obj_shoot);
+/// Shooting
+if (canFire){
+    // Draw Cursor
+    if (!instance_exists(obj_cursor)){
+        instance_create(mouse_x,mouse_y,obj_cursor);
+    }
+    // Firing
+    if (instance_number(obj_shoot) &lt; shoots){
+        if (action){
+            instance_create(x,y,obj_shoot);
+        }
     }
 }
 </string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>801</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_set_cursor</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>5</kind>
+            <sprite>-1</sprite>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>0</string>
           </argument>
         </arguments>
       </action>
