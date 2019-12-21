@@ -32,7 +32,7 @@ event_inherited();
 attack = 30;
 defense = 10;
 life = 180;
-intSpeed = 3;
+intSpeed = 10;
 
 </string>
           </argument>

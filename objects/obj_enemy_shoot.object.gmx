@@ -30,6 +30,7 @@ targetX = obj_player.x;
 targetY = obj_player.y;
 colPoint = instance_create(targetX,targetY,obj_col_shoot);
 alarm[0] = room_speed * 10;
+active = true;
 </string>
           </argument>
         </arguments>
@@ -130,11 +131,16 @@ scr_destroy_bullet(colPoint,self);
           <argument>
             <kind>1</kind>
             <string>/// Hit the player
-with(other){
-    image_blend = c_orange;
-    alarm[1] = room_speed / 3; 
+if (active){
+        scr_destroy_bullet(colPoint,self);
+        with(other){
+        image_blend = c_orange;
+        alarm[1] = room_speed / 6; 
+    }
+    active = false;    
 }
-scr_destroy_bullet(self,colPoint);
+
+
 </string>
           </argument>
         </arguments>

@@ -31,6 +31,7 @@ targetX = mouse_x;
 targetY = mouse_y;
 colPoint = instance_create(targetX,targetY,obj_col_shoot);
 alarm[0] = room_speed * 5;
+active = true;
 </string>
           </argument>
         </arguments>
@@ -131,10 +132,40 @@ scr_destroy_bullet(colPoint,self);
           <argument>
             <kind>1</kind>
             <string>/// Hit the enemies
-with(other){
-    image_blend = c_aqua;
-    alarm[1] = room_speed / 3; 
+
+if (active){
+        with(other){
+        image_blend = c_aqua;
+        alarm[1] = room_speed / 6; 
+    }
+    active = false;    
 }
+
+scr_destroy_bullet(self,colPoint);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_enemy_shoot">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Destroy Each other
+scr_destroy_bullet(other,other.colPoint);
 scr_destroy_bullet(self,colPoint);
 </string>
           </argument>

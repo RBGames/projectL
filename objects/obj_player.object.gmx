@@ -89,21 +89,25 @@ right = keyboard_check(vk_right);
 up = keyboard_check(vk_up);
 down = keyboard_check(vk_down);
 action = mouse_check_button_pressed(mb_left);
-
+// Collision
+colLeft = place_meeting(x-intSpeed,y,obj_block);
+colRight = place_meeting(x+intSpeed,y,obj_block);
+colTop = place_meeting(x,y-intSpeed,obj_block);
+colBottom = place_meeting(x,y+intSpeed,obj_block);
 // Moving
-if(left &amp;&amp; x &gt; 32){
+if((left &amp;&amp; x &gt; 32) &amp;&amp; !colLeft){
     x -= intSpeed;
 }
 
-if(right &amp;&amp; x &lt; room_width - 32){
+if((right &amp;&amp; x &lt; room_width - 32) &amp;&amp; !colRight){
     x += intSpeed;
 }
 
-if(up &amp;&amp; y &gt; 32){
+if((up &amp;&amp; y &gt; 32) &amp;&amp; !colTop){
     y -= intSpeed;
 }
 
-if(down &amp;&amp; y &lt; room_height - 32){
+if((down &amp;&amp; y &lt; room_height - 32) &amp;&amp; !colBottom){
     y += intSpeed;
 }
 
