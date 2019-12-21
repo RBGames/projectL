@@ -7,6 +7,7 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="210mm"
@@ -37,9 +38,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.27631402"
-     inkscape:cx="-371.53554"
-     inkscape:cy="762.9379"
+     inkscape:zoom="1.5630681"
+     inkscape:cx="-560.70531"
+     inkscape:cy="357.66325"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -1076,5 +1077,28 @@
          id="circle982"
          style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.06339049;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     </g>
+    <image
+       width="8.4666662"
+       height="8.4666662"
+       preserveAspectRatio="none"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAJ9JREFUWIXt lUEKgDAMBFM/4v+fZT9SLyoVbXebGATNggfZ2pkKRpFIJPL3JHJdAc+i3iRQOrunus9VPw9IIHjz 6vXL1iNAz/B88v0u8YfKgt/ERO2kgLPBAo5wTsARzgk4wjkBZTJeIiL4O72dASycmQXqQfQEnBWg JUbhIwJQQgMfFWhKaOEagYuEBa4VOCSscGvoP56rxJvwSOQbWQEHm0mbLo5DVgAAAABJRU5ErkJg gg== "
+       id="image4679"
+       x="-124.14066"
+       y="177.96223" />
+    <image
+       y="173.26025"
+       x="-138.12202"
+       id="image5247"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAAARlJREFUeJzt
+mEEKwjAQRRPxHh6oa6/gobyCaw+kF6mLzkAJpjTJJCHkPZC22Pkp/IeSOgcAAAAAAAAAs+FLA+5y
+fDm3nrzfy/1Z84vMvxOe8YiLUc6wZBsQNneqvt2CDzl9Rua/kfmbHK1MwIDUgdzmYwunzqsZViZg
+QMbMcfNr8I0v/qP5S2iCy/w9m96Aq1lSo+atwYDihEGbVzDALGmw5hUMKE4YtHkFA3o/QCqxXWIu
+GJA6oG90fOFuMJWweXaDRjR/I5RKreYVDCgNqGVC7eYVDLAKsjKhVfMKBlgH5prQunkFA2oFnzWh
+V/MKBtReIGZC7+YVDGi1UGjCR657Na9Mb0BzFvm4zYR1d90FDAAAAAAAgCn5AfHNR69kf0rvAAAA
+AElFTkSuQmCC
+"
+       preserveAspectRatio="none"
+       height="16.933332"
+       width="16.933332" />
   </g>
 </svg>

@@ -80,10 +80,10 @@
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_world3</room>
+    <room>rooms\rm_world4</room>
     <room>rooms\rm_world1</room>
     <room>rooms\rm_wold2</room>
-    <room>rooms\rm_world4</room>
+    <room>rooms\rm_world3</room>
     <room>rooms\rm_world5</room>
   </rooms>
   <help>
