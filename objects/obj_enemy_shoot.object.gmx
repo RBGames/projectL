@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>///Variables
+level = 1;
 targetX = obj_player.x;
 targetY = obj_player.y;
 colPoint = instance_create(targetX,targetY,obj_col_shoot);
@@ -77,12 +78,26 @@ scr_destroy_bullet(colPoint,self);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Moving
+            <string>/// Moving and animation
 move_towards_point(targetX,targetY,speed);
 
 // Destroy on target
 if (x == targetX &amp;&amp; y == targetY){
     instance_destroy();
+}
+
+/// Change sprite on level
+switch(level){
+    case 1: sprite_index = spr_enemy_shoot;
+    break;
+    case 2: sprite_index = spr_enemy_shoot2;
+    break;
+    case 3: sprite_index = spr_enemy_shoot3;
+    break;
+    case 4: sprite_index = spr_enemy_shoot4;
+    break;
+    case 5: sprite_index = spr_enemy_shoot5;
+    break;                
 }
 </string>
           </argument>

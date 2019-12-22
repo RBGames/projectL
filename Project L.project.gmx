@@ -7,8 +7,6 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\spr_player</sprite>
-    <sprite>sprites\spr_shoot</sprite>
-    <sprite>sprites\spr_enemy_shoot</sprite>
     <sprite>sprites\spr_col_shoot</sprite>
     <sprites name="AI Controls">
       <sprite>sprites\spr_move_up</sprite>
@@ -37,6 +35,23 @@
     <sprites name="Blocks">
       <sprite>sprites\spr_block</sprite>
     </sprites>
+    <sprites name="Bullets">
+      <sprites name="Player">
+        <sprite>sprites\spr_shoot</sprite>
+        <sprite>sprites\spr_shoot2</sprite>
+        <sprite>sprites\spr_shoot3</sprite>
+        <sprite>sprites\spr_shoot4</sprite>
+        <sprite>sprites\spr_shoot5</sprite>
+      </sprites>
+      <sprites name="Enemies">
+        <sprite>sprites\spr_enemy_shoot</sprite>
+        <sprite>sprites\spr_enemy_shoot2</sprite>
+        <sprite>sprites\spr_enemy_shoot3</sprite>
+        <sprite>sprites\spr_enemy_shoot4</sprite>
+        <sprite>sprites\spr_enemy_shoot5</sprite>
+      </sprites>
+    </sprites>
+    <sprite>sprites\spr_warp</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -48,8 +63,6 @@
   </scripts>
   <objects name="objects">
     <object>objects\obj_player</object>
-    <object>objects\obj_shoot</object>
-    <object>objects\obj_enemy_shoot</object>
     <object>objects\obj_col_shoot</object>
     <objects name="AI Controls">
       <object>objects\obj_move_up</object>
@@ -78,12 +91,17 @@
     <objects name="Blocks">
       <object>objects\obj_block</object>
     </objects>
+    <objects name="Bullets">
+      <object>objects\obj_shoot</object>
+      <object>objects\obj_enemy_shoot</object>
+    </objects>
+    <object>objects\obj_warp</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_world4</room>
     <room>rooms\rm_world1</room>
-    <room>rooms\rm_wold2</room>
+    <room>rooms\rm_world2</room>
     <room>rooms\rm_world3</room>
+    <room>rooms\rm_world4</room>
     <room>rooms\rm_world5</room>
   </rooms>
   <help>

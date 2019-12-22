@@ -4,7 +4,7 @@
   <solid>0</solid>
   <visible>-1</visible>
   <depth>0</depth>
-  <persistent>0</persistent>
+  <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -29,12 +29,16 @@
 
 // Stats
 canFire = 1;
-level = 1; 
+level = 5; 
 attack = 10;
 defense = 5;
 life = 100;
 intSpeed = 2;
 shoots = 1;
+
+// Position
+startX = 0;
+startY = 0;
 </string>
           </argument>
         </arguments>
@@ -120,7 +124,8 @@ if (canFire){
     // Firing
     if (instance_number(obj_shoot) &lt; shoots){
         if (action){
-            instance_create(x,y,obj_shoot);
+            bullet = instance_create(x,y,obj_shoot);
+            bullet.level = level;
         }
     }
 }
@@ -149,6 +154,33 @@ if (canFire){
           <argument>
             <kind>4</kind>
             <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="4">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Start on the proper position when cahnging room
+if ((startX &gt; 0) &amp;&amp; (startY &gt; 0)){
+    x = startX;
+    y = startY;
+} 
+</string>
           </argument>
         </arguments>
       </action>
