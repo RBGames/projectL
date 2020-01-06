@@ -96,6 +96,9 @@
       <object>objects\obj_enemy_shoot</object>
     </objects>
     <object>objects\obj_warp</object>
+    <objects name="Effects">
+      <object>objects\obj_transition</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_world1</room>

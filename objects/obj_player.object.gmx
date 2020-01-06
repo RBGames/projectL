@@ -28,6 +28,7 @@
             <string>/// Variables
 
 // Stats
+canMove = true;
 canFire = 1;
 level = 5; 
 attack = 10;
@@ -98,21 +99,32 @@ colLeft = place_meeting(x-intSpeed,y,obj_block);
 colRight = place_meeting(x+intSpeed,y,obj_block);
 colTop = place_meeting(x,y-intSpeed,obj_block);
 colBottom = place_meeting(x,y+intSpeed,obj_block);
+
+// Force stop on transition 
+if (instance_exists(obj_transition)){
+    canMove = false;
+}
+else{
+    canMove = true;
+}
 // Moving
-if((left &amp;&amp; x &gt; 32) &amp;&amp; !colLeft){
-    x -= intSpeed;
-}
+if (canMove){
 
-if((right &amp;&amp; x &lt; room_width - 32) &amp;&amp; !colRight){
-    x += intSpeed;
-}
+    if((left &amp;&amp; x &gt; 32) &amp;&amp; !colLeft){
+        x -= intSpeed;
+    }
 
-if((up &amp;&amp; y &gt; 32) &amp;&amp; !colTop){
-    y -= intSpeed;
-}
+    if((right &amp;&amp; x &lt; room_width - 32) &amp;&amp; !colRight){
+        x += intSpeed;
+    }
 
-if((down &amp;&amp; y &lt; room_height - 32) &amp;&amp; !colBottom){
-    y += intSpeed;
+    if((up &amp;&amp; y &gt; 32) &amp;&amp; !colTop){
+        y -= intSpeed;
+    }
+
+    if((down &amp;&amp; y &lt; room_height - 32) &amp;&amp; !colBottom){
+        y += intSpeed;
+    }
 }
 
 /// Shooting
@@ -180,6 +192,31 @@ if ((startX &gt; 0) &amp;&amp; (startY &gt; 0)){
     x = startX;
     y = startY;
 } 
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Keep object always opaque
+draw_self();
+draw_set_alpha(1);
 </string>
           </argument>
         </arguments>
