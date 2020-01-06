@@ -129,7 +129,9 @@
     <instance objName="obj_move_left" x="1728" y="384" name="inst_EEE2866A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_move_up" x="1760" y="416" name="inst_C87CA679" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_move_up" x="1536" y="384" name="inst_9336519B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_warp" x="32" y="384" name="inst_C591DA25" locked="0" code="intX = 2144;&#xA;intY = 224;&#xA;rm = rm_world1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_warp" x="32" y="384" name="inst_C591DA25" locked="0" code="intX = 2144;&#xA;intY = 224;&#xA;rm = rm_world1;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_warp" x="1600" y="256" name="inst_56EF7F88" locked="0" code="intX = 224;&#xA;intY = 188;&#xA;rm = rm_world3;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_warp" x="960" y="3072" name="inst_A6FB20DC" locked="0" code="intX = 544;&#xA;intY = 160;&#xA;rm = rm_world4;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tiles1" x="0" y="2912" w="96" h="96" xo="0" yo="0" id="10000089" name="inst_5412B3AA" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -158,6 +160,8 @@
     <tile bgName="tiles1" x="288" y="2912" w="96" h="96" xo="96" yo="0" id="10000112" name="inst_B60CB9D4" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tiles1" x="384" y="3104" w="96" h="96" xo="96" yo="0" id="10000113" name="inst_AEA5297E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tiles1" x="32" y="384" w="96" h="96" xo="288" yo="0" id="10000344" name="inst_94C35A74" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tiles1" x="1600" y="256" w="96" h="96" xo="384" yo="0" id="10000345" name="inst_EAFB8667" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tiles1" x="960" y="3072" w="96" h="96" xo="0" yo="96" id="10000347" name="inst_A1405D0F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>
