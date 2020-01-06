@@ -50,7 +50,7 @@ fade = 0.05;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Change the fade sign
+            <string>/// Switch fade in / fade out
 fade *= -1;
 </string>
           </argument>
